@@ -1,11 +1,16 @@
 <form [formGroup]="klient_dane" (ngSubmit)="onSubmit()">
   <div formGroupName="dane">
     <h3>Dane podstawowe</h3>
-    <label for="nazwisko">Imie: </label>
-    <input id="nazwisko" type="text" formControlName="nazwisko" />
+    <label for="imie">Imie: </label>
+    <input id="imie" type="text" formControlName="imie" />
     <br />
     <label for="nazwisko">Nazwisko: </label>
-    <input id="nazwisko" type="text" formControlName="nazwisko" />
+    <input
+      id="nazwisko"
+      type="text"
+      formControlName="nazwisko"
+      
+    />
     <br />
     <label for="email">Email: </label>
     <input id="email" type="text" formControlName="email" />
@@ -17,8 +22,8 @@
     <label for="komorkowy">Tel. komorkowy: </label>
     <input id="komorkowy" type="number" formControlName="komorkowy" />
 
-  <br />
-  
+    <br />
+
     <h3>Dane do wystawienia faktury</h3>
     <label for="odbiorca">Odbiorca: </label>
     <label for="odbiorca">Osoba prywatna </label>
@@ -29,3 +34,5 @@
   <br />
   <button type="submit">Submit</button>
 </form>
+<br />
+<div class="abc"></div>

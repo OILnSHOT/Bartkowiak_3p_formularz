@@ -9,7 +9,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class AppComponent {
   klient_dane = new FormGroup({
     dane: new FormGroup({
-      Imie: new FormControl('', [
+      imie: new FormControl('', [
         Validators.pattern('[a-zA-Z Ł]*'),
         Validators.required,
       ]),
