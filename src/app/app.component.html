@@ -1,0 +1,35 @@
+<form [formGroup]="klient_dane" (ngSubmit)="onSubmit()">
+  <div formGroupName="dane">
+    <h3>Dane podstawowe</h3>
+    <label for="nazwisko">Imie: </label>
+    <input id="nazwisko" type="text" formControlName="nazwisko" />
+    <br />
+    <label for="nazwisko">Nazwisko: </label>
+    <input id="nazwisko" type="text" formControlName="nazwisko" />
+    <br />
+    <label for="email">Email: </label>
+    <input id="email" type="text" formControlName="email" />
+  </div>
+
+  <div formGroupName="telefon">
+    <br />
+    <br />
+    <label for="stacjonarny">Tel. stacjonarny: </label>
+    <input id="stacjonarny" type="number" formControlName="stacjonarny" />
+    <br />
+    <label for="komorkowy">Tel. komorkowy: </label>
+    <input id="komorkowy" type="number" formControlName="komorkowy" />
+  </div>
+
+  <br />
+  <div formGroupName="faktura">
+    <h3>Dane do wystawienia faktury</h3>
+    <label for="odbiorca">Odbiorca: </label>
+    <label for="odbiorca">Osoba prywatna </label>
+    <input type="checkbox" id="osoba_p" formControlName="osoba_p" />
+    <label for="odbiorca">Firma </label>
+    <input type="checkbox" id="firma" formControlName="firma" />
+  </div>
+  <br />
+  <button type="submit">Submit</button>
+</form>
