@@ -21,7 +21,5 @@ export class AppComponent {
       firma: new FormControl(''),
     }),
   });
-  onSubmit() {
-    console.log(this.klient_dane);
-  }
+  onSubmit() {}
 }
