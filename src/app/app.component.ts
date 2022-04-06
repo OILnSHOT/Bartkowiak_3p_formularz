@@ -13,14 +13,13 @@ export class AppComponent {
         Validators.pattern('[a-zA-Z Ł]*'),
         Validators.required,
       ]),
-      Nazwisko: new FormControl(''),
+      nazwisko: new FormControl(''),
       email: new FormControl('', [Validators.email, Validators.required]),
-    }),
-
-    
       stacjonarny: new FormControl(''),
       komorkowy: new FormControl(''),
-  
+      osoba_p: new FormControl(''),
+      firma: new FormControl(''),
+    }),
   });
   onSubmit() {
     console.log(this.klient_dane);
