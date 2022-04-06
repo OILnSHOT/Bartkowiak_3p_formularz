@@ -17,10 +17,10 @@ export class AppComponent {
       email: new FormControl('', [Validators.email, Validators.required]),
     }),
 
-    telefon: new FormGroup({
+    
       stacjonarny: new FormControl(''),
       komorkowy: new FormControl(''),
-    }),
+  
   });
   onSubmit() {
     console.log(this.klient_dane);
